@@ -7,10 +7,10 @@ public class Account {
 	public int getBalance( ) {
 		return balance;
 	}
-	
+	 
 	void deposit(int money) {
 		if(money < 0) {
-			System.out.println("[¿¡·¯] ±Ý¾×Àº À½¼ö¸¦ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("[ï¿½ï¿½ï¿½ï¿½] ï¿½Ý¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}else {
 			balance += money;
 		}
@@ -19,10 +19,10 @@ public class Account {
 	
 	void wihtdraw(int money) {
 		if(money < 0) {
-			System.out.println("[¿¡·¯] ±Ý¾×Àº À½¼ö¸¦ ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("[ï¿½ï¿½ï¿½ï¿½] ï¿½Ý¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 		else if(balance < money) {
-			System.out.println("[¿¡·¯] ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("[ï¿½ï¿½ï¿½ï¿½] ï¿½Ü¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		}
 		else {
 			System.out.println(balance -= money
@@ -33,8 +33,8 @@ public class Account {
 	
 	void printAccountInfo() {
 		
-		System.out.println(" °èÁÂ " + accNum + "(¿¹±ÝÁÖ : " + accName + ")");
-		System.out.println("ÀÜ¾× : " + balance);
+		System.out.println(" ï¿½ï¿½ï¿½ï¿½ " + accNum + "(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + accName + ")");
+		System.out.println("ï¿½Ü¾ï¿½ : " + balance);
 		
 	}
 }
