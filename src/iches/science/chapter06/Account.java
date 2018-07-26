@@ -7,7 +7,7 @@ public class Account {
 	public int getBalance( ) {
 		return balance;
 	}
-	 
+	  
 	void deposit(int money) {
 		if(money < 0) {
 			System.out.println("[����] �ݾ��� ������ �Է��� �� �����ϴ�.");
