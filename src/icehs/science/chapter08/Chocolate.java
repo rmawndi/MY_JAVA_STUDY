@@ -1,10 +1,35 @@
-package iches.science.chapter06;
+package icehs.science.chapter08;
 
 public class Chocolate {
 	private String name;
 	private String type;
 	private int price;
 	
+	
+	
+	public Chocolate(String name, String type, int price) {
+		this.name = name;
+		this.type = type;
+		this.price = price;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
 	String getname( ) {
 		return name;
 	}
@@ -25,10 +50,10 @@ public class Chocolate {
 		printChocolateInfo();
 	}
 	void printChocolateInfo(String newName, String newType, int newPrice) {
-		//System.out.println("�̸� : " + name + ", ���� : " + type + ", ���� : " + price);
+		//System.out.println("이름 : " + name + ", 종류 : " + type + ", 가격 : " + price);
 	}
 	void printChocolateInfo() {
-		System.out.println("�̸� : " + name + ", ���� : " + type + ", ���� : " + price);
+		System.out.println("이름 : " + name + ", 종류 : " + type + ", 가격 : " + price);
 		
 	}
 }
