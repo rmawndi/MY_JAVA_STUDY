@@ -3,17 +3,17 @@ package icehs.science.chapter09;
 public class AnimalTest {
 
 	public static void main(String[] args) {
-		Cat cat1 = new Cat();
-		cat1.setName("야옹이");
-		cat1.setAge(3);
-		cat1.setKind("마티즈");
+		Animal[] anis = { 
+				new Cat(3, "페르시안","야옹이"),
+				new Dog(3, "시베리안허스키","멍멍이"),
+				
+		};
 		
-		System.out.println("이름 : " + cat1.getName());
-		System.out.println("나이 : " + cat1.getAge());
-		System.out.println("종류 : " + cat1.getKind());
-		cat1.run();
-		cat1.hunt();
-		cat1.play();
+		for(int i = 0; i < anis.length; i++ ) {
+			anis[i].run();
+			anis[i].hunt();
+		}
+		
 		
 
 	}

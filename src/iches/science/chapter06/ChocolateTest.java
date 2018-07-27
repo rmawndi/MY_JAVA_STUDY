@@ -4,21 +4,21 @@ public class ChocolateTest {
 
 	public static void main(String[] args) {
 		Chocolate choco = new Chocolate();
-		choco.name = "¾Æ¸¶µµ¶ó";
-		choco.type = "´ÙÅ©";
-		choco.price =2200;
+		choco.setName("xxx");
+		choco.setType ("ï¿½ï¿½Å©");
+		choco.setPrice (2200);
 		
 		choco.printChocolateInfo();
 		String chocoName = choco.getname();
 		int totalPrice = choco.calculateTotalPrice(20);
 		
-		System.out.println(chocoName + "ÃÊÄÚ·¿ 20°³ : " + totalPrice +"¿ø");
+		System.out.println(chocoName + "ï¿½ï¿½ï¿½Ú·ï¿½ 20ï¿½ï¿½ : " + totalPrice +"ï¿½ï¿½");
 		
-		choco.changeChocolateInfo("Ä«Æä Å°¸®½¬", 2500);
+		choco.changeChocolateInfo("Ä«ï¿½ï¿½ Å°ï¿½ï¿½ï¿½ï¿½", 2500);
 		chocoName = choco.getname();
 		totalPrice = choco.calculateTotalPrice(15, 10);
-		System.out.println(chocoName + "ÃÊÄÚ·¿ 15°³(10%)ÇÒÀÎ : " + totalPrice);
-		choco.changeChocolateInfo("Æ®¸®ÇÃ ºí¶û", "È­ÀÌÆ®", 2300);
+		System.out.println(chocoName + "ï¿½ï¿½ï¿½Ú·ï¿½ 15ï¿½ï¿½(10%)ï¿½ï¿½ï¿½ï¿½ : " + totalPrice);
+		choco.changeChocolateInfo("Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½", "È­ï¿½ï¿½Æ®", 2300);
 		
 		
 		
